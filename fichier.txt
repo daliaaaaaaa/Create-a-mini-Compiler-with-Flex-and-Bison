@@ -1,0 +1,27 @@
+LOGICAL ROUTINE empiler(a,b,copo,TAB(3,2))
+INTEGER A;
+INTEGER A,B,MAT DIMENSION(40);
+INTEGER TAB DIMENSION(3,5);
+REAL TAB2 DIMENSION(3,5);
+CHARACTER C;
+C = 2;
+A = B*5;
+A = 7/9;
+A=3*6;
+WRITE ("Donner la valeur de A :"); READ (A);
+IF ((A.EQ.(B+1))) THEN A = A-B ;
+ELSE
+A = A + B; 
+ENDIF
+DOWHILE (A.LT.10) A = A + 1;
+ENDDO;
+EQUIVALENCE (A, B, C), (Y, TAB(-3));
+empiler=TRUE;
+ENDR
+PROGRAM PRINCIPAL INTEGER A;
+REAL B;
+LOGICAL C;
+DOWHILE (A.LT.10) A = A + 1;
+ENDDO;
+C=CALL empiler(a,b,copo,TAB(3,2));
+END
